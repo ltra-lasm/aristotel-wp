@@ -1,0 +1,134 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #000080, #4b0082); /* Dark Blue to Dark Purple Gradient Background */
+    color: #fff;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background: rgba(0, 0, 128, 0.8); /* Semi-Transparent Dark Blue Navbar */
+    color: #fff;
+    padding: 15px 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #8a2be2; /* Purple Highlight on Hover */
+}
+
+main {
+    padding: 100px 20px; /* Space for fixed navbar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensures full screen height */
+    box-sizing: border-box;
+}
+
+.card {
+    background-color: #000; /* Black background for the card */
+    color: #fff; /* White text color */
+    padding: 30px;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    text-align: center;
+    width: 80%; /* Width of the card, can adjust as needed */
+    max-width: 500px; /* Max width for larger screens */
+}
+
+footer {
+    background: rgba(0, 0, 128, 0.8); /* Semi-Transparent Dark Blue Footer */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button{
+    cursor: pointer;
+    transition: transform 0.2s;
+    color: white;
+    background-color: black;
+    border-color:black;
+    border:0px;
+    font-size:18px;
+    font-weight: bold;
+}
+
+button:hover, a:hover {
+    transform: scale(1.1);
+    color: #8a2be2;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+ul li a {
+    transition: color 0.3s ease-in-out;
+}
+
+ul li a:hover {
+    color: #8a2be2; /* Purple Hover */
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav a {
+        font-size: 1rem;
+    }
+
+    ul li {
+        font-size: 1rem;
+    }
+
+    main {
+        padding: 80px 10px; /* Adjust padding for mobile */
+    }
+
+    footer {
+        font-size: 0.8rem; /* Smaller footer font on mobile */
+    }
+
+    .card {
+        width: 90%; /* Adjust width for mobile */
+        padding: 20px; /* Less padding on mobile */
+    }
+}
+ul {
+    list-style-type: none; /* Removes bullet points */
+    padding-left: 0; /* Removes default padding */
+}
