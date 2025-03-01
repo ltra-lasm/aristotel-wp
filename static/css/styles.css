@@ -125,7 +125,7 @@ ul li a:hover {
 
     .card {
         width: 90%; /* Adjust width for mobile */
-        padding: 20px; /* Less padding on mobile */
+        padding: 100px; /* Less padding on mobile */
     }
 }
 ul {
