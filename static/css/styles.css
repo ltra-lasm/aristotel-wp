@@ -7,15 +7,16 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #000080, #4b0082); /* Dark Blue to Dark Purple Gradient Background */
+    background: linear-gradient(rgb(0, 0, 148), rgb(0, 0, 128)); /* Dark Blue to Dark Purple Gradient Background */
     color: #fff;
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    border-radius: 10px black;
 }
 
 nav {
-    background: rgba(0, 0, 128, 0.8); /* Semi-Transparent Dark Blue Navbar */
+    background: rgba(0, 0, 148, 0.8); /* Semi-Transparent Dark Blue Navbar */
     color: #fff;
     padding: 15px 10px;
     position: fixed;
@@ -23,6 +24,7 @@ nav {
     width: 100%;
     z-index: 1000;
     text-align: center;
+    border-bottom:10px black;
 }
 
 nav a {
@@ -34,33 +36,34 @@ nav a {
 }
 
 nav a:hover {
-    color: #8a2be2; /* Purple Highlight on Hover */
+    color: gold; /* Purple Highlight on Hover */
 }
 
 main {
     padding: 100px 20px; /* Space for fixed navbar */
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     height: 100vh; /* Ensures full screen height */
     box-sizing: border-box;
 }
 
 .card {
-    background-color: #000; /* Black background for the card */
+    background-color: rgba(0, 0, 148, 0.8); /* Black background for the card */
     color: #fff; /* White text color */
-    padding: 30px;
+    padding: 15px;
     border-radius: 15px; /* Rounded corners */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
-    text-align: center;
-    width: 80%; /* Width of the card, can adjust as needed */
-    max-width: 500px; /* Max width for larger screens */
+    text-align: left;
+    width: 100%; /* Width of the card, can adjust as needed */
+    max-width: 900px; /* Max width for larger screens */
+    
 }
 
 footer {
     background: rgba(0, 0, 128, 0.8); /* Semi-Transparent Dark Blue Footer */
     color: #fff;
-    text-align: center;
+    text-align: right;
     padding: 10px;
     position: fixed;
     bottom: 0;
@@ -77,11 +80,6 @@ button{
     border:0px;
     font-size:18px;
     font-weight: bold;
-}
-
-button:hover, a:hover {
-    transform: scale(1.1);
-    color: #8a2be2;
 }
 
 /* Animations */
@@ -101,7 +99,7 @@ ul li a {
 }
 
 ul li a:hover {
-    color: #8a2be2; /* Purple Hover */
+    color: #00000f; /* Purple Hover */
     text-decoration: underline;
 }
 
@@ -125,7 +123,8 @@ ul li a:hover {
 
     .card {
         width: 90%; /* Adjust width for mobile */
-        padding: 100px; /* Less padding on mobile */
+        padding: 30px; /* Less padding on mobile */
+        padding-top: 10%;
     }
 }
 ul {
